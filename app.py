@@ -92,7 +92,7 @@ def match_resume(posting,resume):
     4 Be mindful that the hiring process is extensive and critical, warranting careful selection rather than arbitrary choices.
     5 Provide a final percentage that encapsulates the candidate's compatibility with the job requirements, based  on your detailed match analysis.
     6 Don't give high scores ( such as above 70) unless relevant experience and skills found
-    7 Final Answer should be just a Number
+    7 Each Available Field should be analyzed like Summary, Experience, Skills, etc
     """
 
     prompt = PromptTemplate(template=template, input_variables=["posting","resume"])
@@ -301,20 +301,28 @@ def main():
         posting1 = gpt4_json_convert(posting,posting_temp)
         resume1 = gpt4_json_convert(resume,resume_temp)
         new_resum = generate_resume(posting1,resume1)
-        resu = gpt4_json_convert(new_resum,resume_temp)
-        create_pdf_resume(resu,"formatted_resume.pdf")
+        #resu = gpt4_json_convert(new_resum,resume_temp)
+        #create_pdf_resume(resu,"formatted_resume.pdf")
 
-        with open("formatted_resume.pdf", "rb") as pdf_file:
-            pdf_bytes = pdf_file.read()
-            st.download_button(
-                label="Download Resume as PDF",
-                data=pdf_bytes,
-                file_name="New_resume_GPT.pdf",
-                mime="application/pdf"
-            )
+        # Show Flaws in Resume 
+        score_details = match_resume(posting1,resume1)
+        st.info(label="Match Percentage",value=score_details)
 
-        #score_details = match_resume(posting1,resume1)
-        #st.metric(label="Match Percentage",value=score_details)
+        # Show New Resume
+        st.subheader("Your Updated Resume is below")
+        st.info(new_resum)
+
+
+        # with open("formatted_resume.pdf", "rb") as pdf_file:
+        #     pdf_bytes = pdf_file.read()
+        #     st.download_button(
+        #         label="Download Resume as PDF",
+        #         data=pdf_bytes,
+        #         file_name="New_resume_GPT.pdf",
+        #         mime="application/pdf"
+        #     )
+
+        
         
         
     st.stop()    
