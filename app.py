@@ -22,10 +22,10 @@ from io import BytesIO
 load_dotenv()
 
 
-with open('profile_template.json', 'r') as file:
+with open('Data/profile_template.json', 'r') as file:
     resume_temp = json.load(file)
 
-with open('posting_template.json', 'r') as file:
+with open('Data/posting_template.json', 'r') as file:
     posting_temp = json.load(file)
 
 def retreive_posting(posting):
@@ -148,7 +148,7 @@ def gpt4_json_convert(text,temp):
 
 def generate_resume(posting,resume):
 
-    llm = ChatOpenAI(model_name="gpt-4-0125-preview",temperature=0.5)
+    llm = ChatOpenAI(model_name="gpt-3.5-turbo-0125",temperature=0.5)
 
     template = """
     You are an advanced Resume Builder Tool designed to optimize resumes for specific job postings. Given a resume and a job posting, your task is to tailor the resume to better match the job requirements. Please adhere to the following guidelines:

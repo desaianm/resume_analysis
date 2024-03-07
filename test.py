@@ -12,7 +12,6 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from openai import OpenAI
-from apikey import key2
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -25,8 +24,8 @@ from reportlab.pdfbase.ttfonts import TTFont
 
 load_dotenv()
 
-with open('resume.txt', 'r') as file:
-    resume = file.read()
+#with open('resume.txt', 'r') as file:
+#    resume = file.read()
 
 pdfFile = open('resume.pdf', 'rb')
 
