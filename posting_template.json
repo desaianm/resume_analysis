@@ -1,0 +1,22 @@
+{
+    "job_posting_id": "",
+    "CompanyName": "",
+    "Location": "",
+    "Description": "",
+    "Requirements": {
+      "Essential": [],
+      "Preferred": []
+    },
+    "AdditionalSkills": [],
+    "Compensation": {
+      "SalaryRange": "",
+      "Benefits": []
+    },
+    "OtherInformation": "",
+    "CompanyInformation": {
+      "About": "",
+      "Culture": "",
+      "Values": ""
+    }
+  }
+  

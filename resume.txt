@@ -1,0 +1,55 @@
+{
+"profile_id": "",
+"Name": "Anmol Desai",
+"Email": "adcan288@gmail.com",
+"Education": [],
+"Experience": [
+{
+"CompanyName": "Rogers Communications",
+"Role": "Retail Sales Associate",
+"Location": "Moncton, NB",
+"StartDate": "April 2022",
+"EndDate": "Current",
+"Responsibilities": [
+"Effectively sell Rogers products and services to customers while providing exceptional customer service.",
+"Utilize comprehensive knowledge of Rogers products and services to make recommendations to customers.",
+"Troubleshoot customer issues and provide appropriate solutions.",
+"Analyze sales data to identify areas for improvement and increase sales and profitability.",
+"Demonstrate strong attention to detail to ensure accuracy in processing orders and handling customer information."
+]
+},
+{
+"CompanyName": "The Source",
+"Role": "Part Time Retail Sales Associate",
+"Location": "Moncton, NB",
+"StartDate": "October 2020",
+"EndDate": "December 2021",
+"Responsibilities": [
+"Greet customers and offer excellent customer service from intake to process the requirement",
+"Process a Sell of Mobile Phone to Customer and Help with Setting up the Device",
+"Order necessary parts from suppliers and double-check that they are delivered to Store",
+"Invoice and collect payment from customers for services rendered",
+"Handle and resolve customer complaints regarding services",
+"Maintain customer records and enter data into computer databases"
+]
+},
+{
+"CompanyName": "Concentrix Inc.",
+"Role": "Technical Support Specialist",
+"Location": "Moncton, NB",
+"StartDate": "November 2020",
+"EndDate": "September 2021",
+"Responsibilities": [
+"Greet customers and offer excellent customer service from intake to process the requirement",
+"Process a Sell of Mobile Phone to Customer and Help with Setting up the Device",
+"Order necessary parts from suppliers and double-check that they are delivered to Store",
+"Invoice and collect payment from customers for services rendered",
+"Handle and resolve customer complaints regarding services",
+"Maintain customer records and enter data into computer databases"
+]
+}
+],
+"Activities": [],
+"Interests": [],
+"AdditionalInformation": "Excellent customer service background including experience in sales and services. Ability to remain calm and composed when handling difficult customer situations. Effective team player but able to work independently with little or no supervision. Increased customer retention by providing excellent customer service. Good Critical Thinking Skills and Quick Learner. Accustomed to working in fast-paced environments with the ability to think quickly. Excellent Knowledge in Working with Operating Systems like IOS and Microsoft Office. Familiar with all Apple Products and have a decent if not in-depth Knowledge."
+} 
