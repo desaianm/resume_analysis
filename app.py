@@ -158,13 +158,13 @@ def generate_resume(posting,resume):
     
     Tailoring Instructions:
 
-    Direct Output: Provide the revised resume directly without any explanation or notes or score.
+    
     Preserve Original Content: Do not introduce elements that are not originally present in the input resume. Enhancements should only utilize existing information.
     Required Modifications: Implement necessary alterations based on the analysis to better align the resume with the job posting.
     Experience and Education: Maintain the original scope of experiences and educational qualifications. Do not fabricate new entries.
-    No New Attributes: Avoid adding any new categories or sections not already included in the resume.
+    No New Attributes: Avoid adding any new categories or sections not already included in the resume but update exisitng ones.
     Make new changes to increase analysis score upto 30 percent.
-    give output in text format 
+    provide output in text ready to apply for the Posting
 
     
     """
@@ -306,7 +306,7 @@ def main():
 
         # Show Flaws in Resume 
         score_details = match_resume(posting1,resume1)
-        st.info(label="Match Percentage",value=score_details)
+        st.info(score_details)
 
         # Show New Resume
         st.subheader("Your Updated Resume is below")
