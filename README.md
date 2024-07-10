@@ -89,4 +89,4 @@ Contributions are welcome! Please read the [CONTRIBUTING](CONTRIBUTING.md) guide
 
 ## Contact
 
-For any questions or suggestions, please contact [your_name](mailto:your_email@example.com).
+For any questions or suggestions, please contact adcan288@gmail.com.
